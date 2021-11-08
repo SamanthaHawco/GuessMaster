@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pointTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="serif-monospace"
+        android:text="Total Points"
+        android:textColor="#53536A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#252424"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="239dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/personNameText"
+        android:layout_width="387dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Current Person"
+        android:textColor="#53536A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/personImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="359dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="34dp"
+        android:drawableBottom="@color/teal_200"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter guess here in the form DD/MM/YYYY"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#191818"
+        android:textColorHint="#53536A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personImage" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="130dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="monospace"
+        android:text="Guess!"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:backgroundTint="#5859A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="130dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="monospace"
+        android:text="Change Person"
+        android:textSize="16sp"
+        app:backgroundTint="#5859A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
